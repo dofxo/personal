@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "concurrently --kill-others \"npm run sass\" \"npm run tsc\"",
     "sass": "sass -w --no-source-map ./assets/src/scss/.:./public/src/css/.",
-    "tsc": "tsc -w ./assets/src/ts/*.ts --outDir ./public/src/js"
+    "tsc": "tsc -w"
   },
   "keywords": [],
   "author": "",
