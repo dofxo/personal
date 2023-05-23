@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "concurrently --kill-others \"npm run sass\" \"npm run tsc\"",
-    "sass": "sass -w --no-source-map ./assets/styles/scss/.:./assets/styles/css/.",
-    "tsc": "tsc -w ./assets/scripts/ts/*.ts --outDir ./assets/scripts/js"
+    "sass": "sass -w --no-source-map ./assets/src/scss/.:./public/src/css/.",
+    "tsc": "tsc -w ./assets/src/ts/*.ts --outDir ./public/src/js"
   },
   "keywords": [],
   "author": "",
