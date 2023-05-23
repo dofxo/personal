@@ -4,12 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass -w --no-source-map ./assets/styles/scss/.:./assets/styles/css/."
+    "sass": "sass -w --no-source-map ./assets/styles/scss/.:./assets/styles/css/.",
+    "tsc":"tsc -w ./assets/scripts/ts/*.ts --outDir ./assets/scripts/js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "sass": "^1.62.1"
+    "sass": "^1.62.1",
+    "typescript": "^5.0.4"
   }
 }
