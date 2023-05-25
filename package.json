@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "concurrently --kill-others \"npm run sass\" \"npm run tsc\"",
-    "sass": "sass -w --no-source-map ./assets/src/scss/.:./public/src/css/.",
+    "sass": "sass -w --no-source-map ./assets/src/scss/.:./assets/dist/css/.",
     "tsc": "tsc -w"
   },
   "keywords": [],
