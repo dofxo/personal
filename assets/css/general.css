@@ -1,0 +1,18 @@
+/* fonts */
+@font-face {
+  font-family: Poppins;
+  src: url("../fonts/Poppins-Regular.ttf");
+}
+
+/* general stuff */
+* {
+  font-family: Poppins;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}

@@ -1,0 +1,11 @@
+:root {
+  --body-bg-color: linear-gradient(to left, #511281 10%, #301b3f);
+  --container-bg-color: #d1bae0;
+  --biography-color: #2d033b;
+  --socials-icon-color: linear-gradient(to bottom, #865dff, #974df1);
+  --title-color: #191825;
+  --project-bg-color: #865dff;
+  --skill-bg-color: #ffffff41;
+  --btn-bg-color: #865dff;
+  --btn-color: #2d033b;
+}

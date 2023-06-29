@@ -1,0 +1,225 @@
+/* body background */
+
+@import "./general.css";
+@import "./config.css";
+
+body {
+  background: var(--body-bg-color);
+}
+
+/* container */
+#container {
+  width: 90vw;
+  margin: 50px auto;
+  display: flex;
+  background-color: var(--container-bg-color);
+  border-radius: 30px;
+  position: relative;
+  max-width: 1300px;
+  gap: 0 20px;
+  padding: 0 10px;
+}
+
+/* left side of the container */
+#personal-info {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 800px;
+}
+
+/* bio */
+#biography {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+#job-title {
+  font-size: 14px;
+}
+
+#biography > img {
+  width: 150px;
+  border-radius: 50px;
+  padding: 5px;
+  margin: 10px 0;
+}
+
+#biography > span {
+  color: var(--biography-color);
+}
+
+#biography > span:last-of-type {
+  color: var(--biography-color);
+}
+
+/* social media */
+#social-media {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#social-media .socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#social-media .socials > i {
+  font-size: 60px;
+  background: var(--socials-icon-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* media queries for left side of the container */
+
+@media screen and (max-width: 700px) {
+  #job-title {
+    font-size: 10px;
+  }
+}
+
+/* skills & projects */
+#skills-cotainer,
+#projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#skills {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+#skills-cotainer > h2,
+#projects-container > h2 {
+  color: var(--title-color);
+  font-weight: bold;
+  font-size: 40px;
+}
+
+#projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.project {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--project-bg-color);
+  border-radius: 10px;
+  margin: 10px 0;
+  box-shadow: 0 0 5px -1px #000;
+}
+.project > img {
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  width: 100%;
+  height: 150px;
+}
+
+.project .projects-details {
+  display: flex;
+  padding: 10px 0;
+  width: 100%;
+  gap: 0 10px;
+  justify-content: center;
+}
+.project .projects-details #buttons {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.projects-details > h3 {
+  margin: 0;
+  color: var(--biography-color);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.view-project,
+.visit-website {
+  cursor: pointer;
+  border: none;
+  background: var(--btn-bg-color);
+  color: var(--btn-color);
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 5px 10px;
+  margin: 5px 0;
+  transition: 0.1s linear;
+  box-shadow: inset 1px 1px 5px -2px var(--btn-color);
+}
+
+.view-project:hover,
+.visit-website:hover {
+  box-shadow: inset 1px 1px 10px -2px var(--btn-color);
+}
+
+.view-project:active,
+.visit-website:active {
+  transform: scale(0.9);
+}
+
+.skill {
+  padding: 10px 10px;
+  display: flex;
+  gap: 5%;
+  background-color: var(--skill-bg-color);
+  border-radius: 15px;
+  box-shadow: 0 0 10px -5px #00000054;
+}
+
+.skill > img {
+  width: 50px;
+}
+
+@media screen and (max-width: 700px) {
+  #biography {
+    margin-bottom: 0;
+  }
+  #personal-info {
+    width: unset;
+    gap: 0 10px;
+    flex-direction: row;
+  }
+  #social-media {
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  #container {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 350px) {
+  .project {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 900px) {
+  #projects {
+    justify-content: space-around;
+  }
+}
