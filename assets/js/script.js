@@ -26,6 +26,18 @@ const projectsList = [
     projectLink: "https://dofxo.github.io/car-insurance/",
   },
   {
+    projectName: "IQ Test",
+    imageUrl: "iq-test.png",
+    githubLink: "https://github.com/dofxo/IQ-test",
+    projectLink: "https://dofxo.github.io/IQ-test",
+  },
+  {
+    projectName: "Sticky Note",
+    imageUrl: "sticky-note.png",
+    githubLink: "https://github.com/dofxo/sticky-notes",
+    projectLink: "https://dofxo.github.io/sticky-notes",
+  },
+  {
     projectName: "Apollox",
     imageUrl: "apollox.png",
     githubLink: "https://github.com/dofxo/apollox",
@@ -54,18 +66,6 @@ const projectsList = [
     imageUrl: "cc.png",
     githubLink: "https://github.com/dofxo/character-counter",
     projectLink: "https://dofxo.github.io/character-counter",
-  },
-  {
-    projectName: "Sticky Note",
-    imageUrl: "sticky-note.png",
-    githubLink: "https://github.com/dofxo/sticky-notes",
-    projectLink: "https://dofxo.github.io/sticky-notes",
-  },
-  {
-    projectName: "IQ Test",
-    imageUrl: "iq-test.png",
-    githubLink: "https://github.com/dofxo/IQ-test",
-    projectLink: "https://dofxo.github.io/IQ-test",
   },
 ];
 
