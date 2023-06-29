@@ -103,7 +103,8 @@ body {
 }
 
 #skills-cotainer > h2,
-#projects-container > h2 {
+#projects-container > h2,
+#resume-container > h2 {
   color: var(--title-color);
   font-weight: bold;
   font-size: 40px;
@@ -158,7 +159,8 @@ body {
 }
 
 .view-project,
-.visit-website {
+.visit-website,
+#resume-container > button {
   cursor: pointer;
   border: none;
   background: var(--btn-bg-color);
@@ -170,9 +172,16 @@ body {
   transition: 0.1s linear;
   box-shadow: inset 1px 1px 5px -2px var(--btn-color);
 }
-
-.view-project:hover,
-.visit-website:hover {
+#resume-container > button {
+  font-size: 18px;
+  border-radius: 10px;
+}
+#resume-container > button > a {
+  color: var(--btn-color);
+}
+w-project:hover,
+.visit-website:hover,
+#resume-container > button:hover {
   box-shadow: inset 1px 1px 10px -2px var(--btn-color);
 }
 
@@ -195,6 +204,9 @@ body {
 }
 
 @media screen and (max-width: 700px) {
+  #resume-container {
+    display: none;
+  }
   #biography {
     margin-bottom: 0;
   }
