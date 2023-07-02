@@ -179,9 +179,9 @@ body {
 #resume-container > button > a {
   color: var(--btn-color);
 }
-w-project:hover,
+
 .visit-website:hover,
-#resume-container > button:hover {
+.view-project:hover {
   box-shadow: inset 1px 1px 10px -2px var(--btn-color);
 }
 
