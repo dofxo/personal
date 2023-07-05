@@ -47,7 +47,7 @@ const projectsList = [
     projectName: "shirVaKhat",
     imageUrl: "shirvakhat.png",
     githubLink: "https://github.com/dofxo/coin-flip",
-    projectLink: "https://dofxo.github.io/apollox",
+    projectLink: "https://dofxo.github.io/coin-flip",
   },
   {
     projectName: "Monogram",
